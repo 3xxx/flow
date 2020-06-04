@@ -489,3 +489,4 @@ func (_DocTypes) RenameTransition(otx *sql.Tx, id DocTransitionID, name string) 
 
 	return nil
 }
+
