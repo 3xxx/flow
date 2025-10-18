@@ -34,9 +34,9 @@ var blobsDir string
 func init() {
 	f := log.Flags()
 	log.SetFlags(f | log.Lmicroseconds | log.Lshortfile)
-	driver, connStr := "mysql", "travis@/flow?charset=utf8&parseTime=true"
-	tdb := fatal1(sql.Open(driver, connStr)).(*sql.DB)
-	RegisterDB(tdb)
+	// driver, connStr := "mysql", "travis@/flow?charset=utf8&parseTime=true"
+	// tdb := fatal1(sql.Open(driver, connStr)).(*sql.DB)
+	// RegisterDB(tdb)
 }
 
 // RegisterDB provides an already initialised database handle to `flow`.
